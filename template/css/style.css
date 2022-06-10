@@ -1,0 +1,93 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../images/gabriel-perez-_ahYGI9nExQ-unsplash.jpg');
+background-repeat: repeat;
+background-size: cover;
+max-height: 100vh;
+color: rgb(227, 219, 219);
+font-family: 'Trispace', sans-serif;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.parent {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 5rem;
+  max-width: 70rem;
+  margin-top: 10%;
+  margin-left: 10%;
+  z-index: 2;
+  color: rgb(197, 197, 197);
+  /* border: 1px solid green; */
+  justify-content: space-around;
+  
+}
+
+img {
+  max-width: 450px;
+  border-radius: 0.6em;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  border: 0.5px solid rgb(197, 197, 197);
+}
+
+.left {
+  /* border: 2px solid red; */
+}
+.left h3 {
+  margin-top: 5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.right h2 {
+ line-height: 1.8;
+ color: rgb(197, 197, 197);
+ font-weight: 400;
+ 
+ text-align: center;
+ /* border: 1px solid red; */
+}
+
+button {
+  border: none;
+  background: rgb(175, 136, 30);
+  padding: 1.15em 1.6em;
+  border-radius: 0.2em;
+  color: white;
+}
+
+input {
+  padding: 1em;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
